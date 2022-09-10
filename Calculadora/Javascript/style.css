@@ -105,5 +105,10 @@ section {
 }
 
 .btn-0 {
-  grid-column: 2/3;
+  grid-column: span 2;
+  width: 100%;
+}
+
+::selection {
+  background-color: transparent;
 }
