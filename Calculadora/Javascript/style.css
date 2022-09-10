@@ -20,12 +20,12 @@ section {
 .container {
   background-color: #e0e0e0;
   width: 90%;
-  height: 500px;
   max-width: 350px;
   border-radius: 32px;
   background: #e0e0e0;
   box-shadow: 7px 7px 14px #828282, -7px -7px 14px #ffffff;
-  overflow: hidden;
+  position: relative;
+  padding: 10px;
 }
 
 .display {
@@ -87,6 +87,16 @@ section {
   border-radius: 100px;
   background: #e0e0e0;
   box-shadow: 5px 5px 11px #aaaaaa, -5px -5px 11px #ffffff;
+  transition: all .3s;
+}
+
+.button:hover {
+  background-color: rgb(30, 43, 46);
+  color: white;
+}
+
+.button:active {
+  transform: scale(.5);
 }
 
 .button:hover {
