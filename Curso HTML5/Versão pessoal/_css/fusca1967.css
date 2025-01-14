@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1{
+    color: #ffffff;
+}
+h2, h3 {
+    color: #333;
+}
+
+.destaque-item, .evento-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #333;
+}
+
+.destaque-item h3, .evento-item h3 {
+    margin-top: 0;
+}
+
+.destaque-item a, .evento-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.destaque-item a:hover, .evento-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../_imagens/harley_davidson_knucklehead_el_1936_motorcycle_low_poly_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_46.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-content .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Especificações Técnicas */
+.specs-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.spec-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.spec-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.spec-item p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Design e História */
+.design-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.design-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.design-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.design-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Galeria de Fotos */
+.gallery-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-links a:hover {
+    color: #e6b800;
+}
+
+ul#album-fotos{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#album-fotos li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01{
+    background: url('../_imagens/Fusca-1300-1967-Motor-Tudo-16.jpeg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto02{
+    background: url('../_imagens/fusca-1967-1.webp') no-repeat;
+    background-position: 50% 50%;
+    background-size: 250px 230px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto03{
+    background: url('../_imagens/maxresdefault.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto04{
+    background: url('../_imagens/volkswagen-fusca-1.3-8v-gasolina-2p-manual-wmimagem11594763870.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto05{
+    background: url('../_imagens/Fusca-67-restaurado-EUA\ \(11\).jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto06{
+    background: url('../_imagens/kathleen-brooks-1967-annie-beetle-large-9207.webp') no-repeat;
+    background-position: 50% 50%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
