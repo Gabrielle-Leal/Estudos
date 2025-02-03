@@ -1,0 +1,20 @@
+h1 {
+    color: #ffffff;
+
+}
+p {
+    color: #ffffff;
+
+}
+main{
+    background-color: #000000;
+}
+button {
+    background-color: ciano;
+    color: #ffffff;
+    border: none;
+
+}
+img {
+    width: 30%;
+}
