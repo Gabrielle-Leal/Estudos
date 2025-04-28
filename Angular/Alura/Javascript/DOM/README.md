@@ -1,43 +1,34 @@
-![Descricao da sua imagem](./thumbnail.png)
+<h1 align="center"> Projeto: Temporizador de Foco e Descanso </h1>
+Este projeto é um temporizador de foco e descanso que altera dinamicamente a aparência da tela conforme o modo selecionado: Foco, Descanso Curto e Descanso Longo.
+A aplicação foi construída utilizando HTML, CSS e JavaScript, focando em manipulação do DOM e boas práticas de desenvolvimento.
 
-# Indexa
+<p align="center">
+<img loading="lazy" src="https://github.com/user-attachments/assets/c7ce268c-dfc8-436d-94e3-61dc853cbb5e"/>
+</p>
 
-Uma aplicação para manipulação de contatos de uma agenda.
 
-## 🔨 Funcionalidades do projeto
+# :hammer: Funcionalidades do projeto
+- `Funcionalidade 1`: Alteração dinâmica da cor de fundo conforme o modo selecionado.
+- `Funcionalidade 2`: Mudança de imagens e textos para cada contexto.
+- `Funcionalidade 3`: Organização de código limpo e modularizado.
+- `Funcionalidade 4`: Utilização de eventos para capturar interações do usuário.
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+# :file_folder: Estrutura do Projeto
+- `index.html`: Estrutura base da página, com utilização de data-attributes para controlar o contexto.
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+- `styles.css`: Estilizações para cada contexto (foco, descanso-curto, descanso-longo), utilizando variáveis CSS.
 
-## ✔️ Técnicas e tecnologias utilizadas
+- `script.js`: Código JavaScript que:
 
-As técnicas e tecnologias utilizadas pra isso são:
+Captura os botões através do querySelector().
 
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
+Adiciona eventos de clique usando addEventListener().
 
-## 📁 Link do Figma
+Altera dinamicamente o atributo data-contexto usando setAttribute().
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
+# :white_check_mark: Boas Práticas Adotadas
+Utilização do atributo defer para carregar o JavaScript somente após a renderização do HTML.
 
-## 🛠️ Abrir e rodar o projeto
+Manipulação eficiente do DOM com querySelector(), addEventListener() e setAttribute().
 
-Você vai precisar do NodeJS, versão 18 ou maior.
-
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
-
-```bash
-npm install
-```
-
-Depois, para executar o projeto em modo desenvolvimento:
-
-```bash
-ng serve
-```
-
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+Separação clara de responsabilidades entre HTML, CSS e JavaScript.
