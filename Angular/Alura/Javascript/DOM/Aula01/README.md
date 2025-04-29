@@ -1,43 +1,121 @@
-![Descricao da sua imagem](./thumbnail.png)
+<h1>Projeto: Temporizador de Foco e Descanso</h1>
 
-# Indexa
+## :clipboard: Descrição
 
-Uma aplicação para manipulação de contatos de uma agenda.
+Neste projeto, desenvolvemos um temporizador de foco e descanso que altera dinamicamente a interface da página conforme o tipo de temporizador selecionado.
 
-## 🔨 Funcionalidades do projeto
+### As alterações envolvem:
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+Cor de fundo da página.
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+Imagem ilustrativa exibida.
 
-## ✔️ Técnicas e tecnologias utilizadas
+Texto descritivo.
 
-As técnicas e tecnologias utilizadas pra isso são:
+Estilização dos botões conforme o contexto.
 
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
+O objetivo é proporcionar uma experiência visual imersiva para cada fase: Foco, Descanso Curto e Descanso Longo.
 
-## 📁 Link do Figma
+🚀 Funcionalidades Implementadas
+1. Alteração da cor de fundo
+Cada contexto possui uma cor de fundo distinta, definida no CSS através do atributo data-contexto aplicado à tag <html>:
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
+- `Foco`: Gradiente em tons de lilás.
 
-## 🛠️ Abrir e rodar o projeto
+- `Descanso Curto`: Gradiente em tons de verde.
 
-Você vai precisar do NodeJS, versão 18 ou maior.
+- `Descanso Longo:`: Gradiente em tons de azul.
 
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
+Essas cores são definidas no CSS:
 
-```bash
-npm install
 ```
+css
 
-Depois, para executar o projeto em modo desenvolvimento:
+[data-contexto="foco"] {
+    --main-bg-color: linear-gradient(180deg, #8B1FF8 0%, #041832 48.44%, #01080E 100%);
+}
 
-```bash
-ng serve
+[data-contexto="descanso-curto"] {
+    --main-bg-color: linear-gradient(180deg, #0F725C 0%, #041832 48.44%, #01080E 100%);
+}
+
+[data-contexto="descanso-longo"] {
+    --main-bg-color: linear-gradient(180deg, #1875E9 0%, #041832 48.44%, #01080E 100%);
+}
 ```
+A troca dinâmica acontece alterando o valor do atributo data-contexto da <html> via JavaScript.
 
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+2. Estrutura dos Arquivos
+- `index.html`: Estrutura básica do site.
+
+- `styles.css`: Estilizações baseadas em contexto.
+
+- `script.js:`: Arquivo JavaScript para manipulação do DOM.
+
+3. Linkando o JavaScript
+O arquivo script.js foi inserido no index.html usando a tag <script> com o atributo defer, garantindo melhor performance:
+```
+html
+
+<link rel="stylesheet" href="./styles.css">
+<script src="./script.js" defer></script>
+```
+O defer garante que o script será carregado apenas após o carregamento completo do HTML.
+
+4. Manipulação de Elementos com JavaScript
+Dentro do script.js:
+
+Selecionamos elementos do DOM:
+```
+javascript
+
+const html = document.querySelector('html')
+const focoBt = document.querySelector('.app__card-button--foco')
+const curtoBt = document.querySelector('.app__card-button--curto')
+Adicionamos eventos de clique:
+
+
+focoBt.addEventListener('click', () => {
+    html.setAttribute('data-contexto', 'foco')
+})
+
+curtoBt.addEventListener('click', () => {
+    html.setAttribute('data-contexto', 'descanso-curto')
+})
+```
+Quando o botão é clicado, o atributo data-contexto da tag <html> é alterado, modificando automaticamente a cor de fundo e, futuramente, as imagens e textos.
+
+5. Contexto Visual de Cada Temporizador
+
+Temporizador	Cor de Fundo	Imagem	Texto
+Foco	Lilás	Imagem relacionada à concentração	Texto motivacional para foco
+Descanso Curto	Verde	Imagem de descanso breve	Texto para pausas curtas
+Descanso Longo	Azul	Imagem inédita	“Hora de voltar à superfície. Faça uma pausa longa.”
+📌 Observações Importantes
+Foi necessário alterar manualmente o atributo data-contexto no HTML para realizar testes iniciais de cor.
+
+Com o JavaScript implementado, agora a troca de contexto acontece dinamicamente no clique dos botões.
+
+O botão "Foco" tinha um estilo especial que foi transferido para "Descanso Curto" quando esse modo é ativado.
+
+📈 Tecnologias Utilizadas
+HTML5
+
+CSS3
+
+JavaScript
+
+🛠️ Melhorias Futuras
+
+Adicionar o botão para "Descanso Longo" e tratá-lo no script.js.
+
+Alterar dinamicamente também as imagens e o texto conforme o contexto do temporizador.
+
+Implementar a contagem regressiva de tempo para cada tipo de sessão (Foco, Descanso Curto e Descanso Longo).
+
+Melhorar a responsividade para dispositivos móveis.
+
+✅ Status do Projeto
+✔️ Troca dinâmica de contexto para "Foco" e "Descanso Curto" implementada.
+✔️ Preparação para implementação do "Descanso Longo".
+🚧 Em desenvolvimento: troca de imagem e texto dinamicamente.
