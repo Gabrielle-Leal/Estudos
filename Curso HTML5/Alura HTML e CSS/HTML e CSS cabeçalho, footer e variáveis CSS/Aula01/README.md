@@ -66,9 +66,8 @@ Código alterado:
 ```
 Foram aplicados ícones ao lado do texto, e a estilização foi ajustada para adicionar uma margem entre o ícone e o texto.
 
-Tecnologias Utilizadas
-HTML
+## Tecnologias Utilizadas
 
-CSS (Flexbox)
-
-Font Awesome (para ícones)
+- HTML
+- CSS (Flexbox)
+- Font Awesome (para ícones)
