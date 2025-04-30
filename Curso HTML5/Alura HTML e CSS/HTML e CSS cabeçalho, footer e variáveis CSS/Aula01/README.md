@@ -1,43 +1,74 @@
-![Descricao da sua imagem](./thumbnail.png)
+# Projeto de Layout com Flexbox e Estilização
 
-# Indexa
+Este projeto tem como objetivo criar uma página com botões de redes sociais estilizados e posicionados corretamente utilizando **Flexbox**. Também é feita a personalização do subtítulo e a inserção de ícones nos botões, para que a página se alinhe com o design esperado.
 
-Uma aplicação para manipulação de contatos de uma agenda.
+## Etapas do Desenvolvimento
 
-## 🔨 Funcionalidades do projeto
+### 1. Posicionamento dos Botões
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+Inicialmente, a página tinha dois botões ("Instagram" e "Github"), que estavam posicionados de forma horizontal. Para corrigir esse problema e exibir os botões na vertical, utilizamos a propriedade `flex-direction: column` no container dos botões. Isso garantiu que o subtítulo e os botões ficassem alinhados verticalmente.
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+#### Código alterado:
 
-## ✔️ Técnicas e tecnologias utilizadas
-
-As técnicas e tecnologias utilizadas pra isso são:
-
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
-
-## 📁 Link do Figma
-
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
-
-## 🛠️ Abrir e rodar o projeto
-
-Você vai precisar do NodeJS, versão 18 ou maior.
-
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
-
-```bash
-npm install
+```css
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
 ```
 
-Depois, para executar o projeto em modo desenvolvimento:
+### 2. Estilização do Subtítulo
+O subtítulo "Acesse minhas redes:" foi estilizado com a fonte Krona One, peso 400 e tamanho 24px. Para isso, foi criada uma nova classe apresentacao__links__subtitulo e aplicada ao elemento h2.
 
-```bash
-ng serve
+Código alterado:
+```css
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
 ```
+### 3. Estilização dos Botões
+Os botões tiveram sua estilização alterada. A cor de fundo foi removida, e foi adicionada uma borda ciano de 2px (border: 2px solid #22D4FD). Também foi alterado o tamanho dos botões, passando de 280px para 378px de largura, e a borda foi suavizada de 16px para 8px.
 
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+Código alterado:
+
+```css
+.apresentacao__links__link {
+    border: 2px solid #22D4FD;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+```
+Essas alterações garantiram que os botões estivessem com as bordas corretas e o texto nas cores esperadas (branco com bordas ciano).
+
+### 4. Inserção de Ícones nos Botões
+Por fim, os ícones de Instagram e GitHub foram adicionados aos botões, utilizando a biblioteca Font Awesome.
+
+Código alterado:
+```html
+<a class="apresentacao__links__link" href="https://instagram.com/rafaballerini">
+    <i class="fab fa-instagram"></i> Instagram
+</a>
+<a class="apresentacao__links__link" href="https://github.com/guilhermeonrails">
+    <i class="fab fa-github"></i> Github
+</a>
+```
+Foram aplicados ícones ao lado do texto, e a estilização foi ajustada para adicionar uma margem entre o ícone e o texto.
+
+Tecnologias Utilizadas
+HTML
+
+CSS (Flexbox)
+
+Font Awesome (para ícones)
