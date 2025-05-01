@@ -1,43 +1,36 @@
-![Descricao da sua imagem](./thumbnail.png)
+# 💡 Desenvolvimento inicial da página "Sobre mim"
+## ✅ O que fizemos
 
-# Indexa
+- Criamos a estrutura básica e semântica do about.html.
+- Reutilizamos o cabeçalho e o rodapé do index.html.
+- Importamos corretamente o CSS para aplicar os estilos existentes.
+- Preparação do <main> para inserção do conteúdo da página.
 
-Uma aplicação para manipulação de contatos de uma agenda.
+## 🧱 Etapas realizadas
+### 🟦 Estrutura semântica da página
 
-## 🔨 Funcionalidades do projeto
+- Removemos o h1 provisório do body.
+- Implementamos as seções: header, main e footer, seguindo a estrutura HTML semântica recomendada.
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+### 🟦 Reutilização do cabeçalho e rodapé
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+- Copiamos os blocos de header e footer do index.html para o about.html.
+- Mantivemos as mesmas classes CSS para garantir a reutilização da estilização.
 
-## ✔️ Técnicas e tecnologias utilizadas
+### 🟦 Importação dos estilos
+Adicionamos a tag:
+````
+<link rel="stylesheet" href="./styles/style.css">
+no <head> da nova página.
+````
+Garantimos que os estilos aplicados no index.html fossem também aplicados ao about.html.
 
-As técnicas e tecnologias utilizadas pra isso são:
+### 🟦 Visualização no navegador
 
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
+- Verificamos que os estilos do cabeçalho e do rodapé foram corretamente aplicados.
+- Notamos que o conteúdo está todo agrupado no topo da página, pois ainda não há elementos no <main>.
 
-## 📁 Link do Figma
+### 🔜 Próximos passos
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
-
-## 🛠️ Abrir e rodar o projeto
-
-Você vai precisar do NodeJS, versão 18 ou maior.
-
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
-
-```bash
-npm install
-```
-
-Depois, para executar o projeto em modo desenvolvimento:
-
-```bash
-ng serve
-```
-
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+- Desenvolver o conteúdo da seção <main> da página about.html, com textos, imagens e layout responsivo conforme o design no Figma.
+- Aplicar estilizações específicas para o conteúdo da página "Sobre mim".
