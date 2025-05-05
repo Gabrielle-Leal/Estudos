@@ -1,43 +1,73 @@
-![Descricao da sua imagem](./thumbnail.png)
+# Projeto Portfólio com Variáveis CSS
 
-# Indexa
+Este projeto é um exemplo prático de como aplicar variáveis CSS para facilitar a manutenção de um site. Durante o desenvolvimento, seguimos uma sequência lógica para estruturar, aplicar e testar variáveis de cor e fonte, garantindo um visual coeso e facilmente personalizável.
 
-Uma aplicação para manipulação de contatos de uma agenda.
+---
 
-## 🔨 Funcionalidades do projeto
+## 🎨 Uso de Variáveis CSS
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+### Declaração de Variáveis
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+No início do projeto, declaramos nossas variáveis no seletor `:root`. Isso nos permite acessar e reutilizar essas variáveis em qualquer parte do código CSS.
 
-## ✔️ Técnicas e tecnologias utilizadas
+```
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
 
-As técnicas e tecnologias utilizadas pra isso são:
-
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
-
-## 📁 Link do Figma
-
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
-
-## 🛠️ Abrir e rodar o projeto
-
-Você vai precisar do NodeJS, versão 18 ou maior.
-
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
-
-```bash
-npm install
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
 ```
 
-Depois, para executar o projeto em modo desenvolvimento:
-
-```bash
-ng serve
+Aplicação das Variáveis
+Substituímos os valores fixos (hexadecimais e nomes de fonte) pelo uso da função var(), conforme exemplo abaixo:
 ```
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
 
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+.cabecalho__menu__link {
+    color: var(--cor-terciaria);
+    font-family: var(--font-secundaria);
+}
+```
+Pseudoclasse :hover
+Criamos a variável --cor-hover para o efeito de hover nos botões e aplicamos:
+```
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+```
+## 🧪 Teste de Paleta Alternativa
+Para validar a eficiência do uso de variáveis, testamos uma nova paleta do site Color Hunt, utilizando o tema "Coffee". As variáveis foram atualizadas conforme abaixo:
+```
+:root {
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #A27B5C;
+    --cor-hover: #3F4E4F;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+```
+## 🧹 Finalização e Limpeza
+Após os testes, retornamos às cores originais do projeto e removemos os comentários desnecessários no CSS:
+
+Removidos:
+```
+/* height: 100vh */
+/* background-color: #22D4FD */
+```
+O projeto está finalizado e pronto para futuras modificações com total flexibilidade, graças ao uso inteligente de variáveis.
+
+## ✅ Considerações Finais
+Mudanças de cores e fontes podem ser feitas centralmente via :root.
+
+É possível criar novas variáveis para margens, espaçamentos, ou tamanhos, conforme a necessidade.
+
+O uso de variáveis CSS torna o projeto mais organizado, limpo e profissional.
