@@ -1,43 +1,50 @@
-![Descricao da sua imagem](./thumbnail.png)
+# 📏 Aula – Unidades de Medida em CSS (rem vs px)
 
-# Indexa
+## 💡 O que aprendi nesta aula:
 
-Uma aplicação para manipulação de contatos de uma agenda.
+Nesta aula, aprofundei meus conhecimentos sobre as diferentes **unidades de medida no CSS**, com destaque para o uso de `rem` como alternativa mais acessível e responsiva aos `px`.
 
-## 🔨 Funcionalidades do projeto
+### ✅ Principais aprendizados:
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+- Existem **unidades absolutas** (px, cm, mm) e **unidades relativas** (rem, em, %, vw, vh etc).
+- A unidade `px` é fixa e **não se adapta às configurações do navegador do usuário**.
+- A unidade `rem` é relativa ao elemento raiz (`html`) e permite que o site **respeite o tamanho de fonte configurado pelo usuário no navegador**.
+- A conversão de `px` para `rem` é feita dividindo o valor em `px` por `16` (que é o valor padrão do `font-size` do `html`):
+  - Ex: `24px` → `1.5rem` (24 ÷ 16)
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+---
 
-## ✔️ Técnicas e tecnologias utilizadas
+## 🛠️ Melhorias aplicadas no projeto:
 
-As técnicas e tecnologias utilizadas pra isso são:
+Com base no que aprendi, realizei as seguintes mudanças no CSS do projeto:
 
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
+| Elemento                                | Antes (px) | Depois (rem) |
+|-----------------------------------------|------------|---------------|
+| `.cabecalho__menu__link`                | 24px       | 1.5rem        |
+| `.apresentacao__conteudo__titulo`       | 36px       | 2.25rem       |
+| `.apresentacao__conteudo__texto`        | 24px       | 1.5rem        |
+| `.apresentacao__links__subtitulo`       | 24px       | 1.5rem        |
+| `.apresentacao__links__link` (botões)   | 24px       | 1.5rem        |
+| `footer` (rodapé)                       | 24px       | 1.5rem        |
 
-## 📁 Link do Figma
+---
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
+## 🧪 Resultado:
 
-## 🛠️ Abrir e rodar o projeto
+Ao alterar as unidades de medida para `rem`, o projeto passou a:
 
-Você vai precisar do NodeJS, versão 18 ou maior.
+- **Se adaptar ao tamanho de fonte definido nas configurações do navegador**
+- **Atender melhor usuários com necessidades de acessibilidade visual**
+- Manter um padrão de medida mais flexível e profissional
 
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
+---
 
-```bash
-npm install
-```
+## 📌 Próximos passos:
 
-Depois, para executar o projeto em modo desenvolvimento:
+- Aplicar o uso de `rem` para **margens e paddings** também
+- Explorar outras unidades relativas como `%`, `em`, `vh` e `vw`
+- Ajustar o layout para garantir responsividade completa
 
-```bash
-ng serve
-```
+---
 
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+> 🧠 _Essa aula me ajudou a entender como pequenas decisões no código impactam diretamente na acessibilidade e experiência do usuário._
