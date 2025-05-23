@@ -1,43 +1,130 @@
-![Descricao da sua imagem](./thumbnail.png)
+# 🚀 Curso de HTML e CSS
 
-# Indexa
+Este repositório contém os arquivos, atividades e anotações do **Curso de HTML e CSS**, que tem como objetivo ensinar desde os conceitos básicos até práticas mais avançadas de desenvolvimento web.
 
-Uma aplicação para manipulação de contatos de uma agenda.
+## 🎯 Objetivo do Curso
 
-## 🔨 Funcionalidades do projeto
+- Construir um site utilizando HTML e CSS
+- Identificar elementos e estilos através do Figma
+- Aplicar os conhecimentos em um projeto real
+- Criar um repositório para armazenar o código
+- Realizar o deploy do site via **GitHub Pages** ou **Vercel**
+- Compartilhar seu projeto com o mundo!
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+---
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+## 📝 Conteúdo do Curso
 
-## ✔️ Técnicas e tecnologias utilizadas
+### 🔹 **Módulo 1: Primeiros Passos**
+- Apresentação
+- Preparando o ambiente
+- A base do HTML
+- Começando com CSS
+- Variáveis CSS
+- Inserindo imagens
+- A motivação da imagem
+- ✔️ **Para saber mais:** Primeiros passos no front-end
+- ✔️ Faça como eu fiz
+- ✔️ Lista de exercícios
+- ✔️ O que aprendemos?
 
-As técnicas e tecnologias utilizadas pra isso são:
+---
 
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
+### 🔹 **Módulo 2: A dupla HTML e CSS na prática**
+- Projeto da aula anterior
+- Criando um botão
+- Botão ou âncora?
+- Grid e continuação
+- Dividindo nossa section
+- Lidando com fontes
+- ✔️ **Para saber mais:** Classes, unidades e grid
+- ✔️ Faça como eu fiz
+- ✔️ Lista de exercícios
+- ✔️ O que aprendemos?
 
-## 📁 Link do Figma
+---
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
+### 🔹 **Módulo 3: Posicionamento e Layout**
+- Projeto da aula anterior
+- Margins e paddings
+- Separando elementos
+- Alinhamentos
+- Centralizando elementos
+- Construindo nova section
+- Reutilizando estilos
+- ✔️ Faça como eu fiz: Continuando o aprendizado
+- ✔️ **Para saber mais:** Inline-block
+- ✔️ Lista de exercícios
+- ✔️ O que aprendemos?
 
-## 🛠️ Abrir e rodar o projeto
+---
 
-Você vai precisar do NodeJS, versão 18 ou maior.
+### 🔹 **Módulo 4: Finalizando nossa página**
+- Projeto da aula anterior
+- Flexbox
+- O desafio do footer
+- ✔️ Faça como eu fiz: Estilizando o footer
+- Pseudo-classes
+- ✔️ **Para saber mais:** CSS interativo
+- ✔️ Lista de exercícios
+- ✔️ O que aprendemos?
 
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
+---
 
-```bash
-npm install
-```
+### 🔹 **Módulo 5: Compartilhando o projeto**
+- Projeto da aula anterior
+- GitHub e repositório
+- GitHub Pages
+- Deploy na Vercel
+- ✔️ **Para saber mais:** Deploy
+- ✔️ Faça como eu fiz: Compartilhar o projeto
+- VSCode Web
+- ✔️ **Para saber mais:** Próximos passos
+- ✔️ **Para saber mais:** Responsividade
+- ✔️ Lista de exercícios
+- ✔️ Para ir mais fundo
+- ✔️ O que aprendemos?
+- ✔️ Conclusão
+- ✔️ Créditos
 
-Depois, para executar o projeto em modo desenvolvimento:
+---
 
-```bash
-ng serve
-```
+## 🌐 Deploy
 
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+- 🔗 [GitHub Pages](https://pages.github.com/)
+- 🔗 [Vercel](https://vercel.com/)
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- Figma (para design)
+- Git e GitHub
+- Vercel (para deploy)
+
+---
+
+## 🤝 Contribuição
+
+Sinta-se livre para abrir issues, enviar pull requests ou sugerir melhorias.
+
+---
+
+## 🧠 Aprendizados
+
+Este curso proporcionou conhecimentos sólidos sobre desenvolvimento web, incluindo:
+- Estruturação de páginas HTML
+- Estilização com CSS (Grid, Flexbox, Pseudo-classes, Variáveis)
+- Publicação de projetos online
+- Princípios de responsividade e boas práticas
+
+---
+
+## 🏆 Créditos
+
+Curso oferecido por [Nome da Plataforma ou Instrutor]  
+Desenvolvido como parte do aprendizado em desenvolvimento front-end.
+
+---
