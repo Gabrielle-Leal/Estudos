@@ -1,43 +1,81 @@
-![Descricao da sua imagem](./thumbnail.png)
+# Projeto Responsivo com HTML e CSS
+Este projeto tem como objetivo criar um site responsivo, aplicando conceitos de desenvolvimento web, media queries, flexbox e efeitos de interação utilizando apenas HTML e CSS. O desenvolvimento foi guiado por um layout disponibilizado no Figma, respeitando os padrões de design tanto para desktop quanto para dispositivos móveis e tablets.
 
-# Indexa
+✨ Funcionalidades e Aprendizados
+Estruturação de páginas com HTML semântico.
 
-Uma aplicação para manipulação de contatos de uma agenda.
+Estilização completa utilizando CSS puro.
 
-## 🔨 Funcionalidades do projeto
+Aplicação de responsividade para diferentes tamanhos de telas através de Media Queries.
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+Uso de padding, margin e unidades relativas (vw, em, %) para garantir que os elementos estejam bem posicionados em qualquer dispositivo.
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+Personalização de elementos com bordas, cores e espaçamentos.
 
-## ✔️ Técnicas e tecnologias utilizadas
+Criação de menus responsivos, que mudam de aparência conforme interação do usuário (ex.: abrir menu, hover, checked).
 
-As técnicas e tecnologias utilizadas pra isso são:
+Implementação de efeitos visuais como:
 
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
+Alteração de cores ao passar o mouse (hover).
 
-## 📁 Link do Figma
+Troca de ícones e fundos quando o menu está aberto (checked com combinadores CSS).
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
+Manipulação avançada de CSS, como:
 
-## 🛠️ Abrir e rodar o projeto
+Uso de combinadores (~ e >) para aplicar estilos em elementos específicos.
 
-Você vai precisar do NodeJS, versão 18 ou maior.
+Pseudo-classes como :hover e :checked para interatividade.
 
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
+Ajustes finos no layout, como espaçamentos laterais com padding: 3em 30vw para seções específicas.
 
-```bash
-npm install
-```
+🎨 Estilização Avançada
+Adição de bordas laterais no footer com border-left: 1px solid.
 
-Depois, para executar o projeto em modo desenvolvimento:
+Espaçamento ajustado no footer e nas seções de conteúdo para melhor equilíbrio visual.
 
-```bash
-ng serve
-```
+Menu hambúrguer interativo:
 
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+Quando aberto, troca o ícone para branco e aplica um fundo azul com degradê.
+
+Lista de categorias no menu:
+
+Quando selecionada, muda de cor para azul.
+
+Efeito hover para destacar os itens com fundo azul e texto branco.
+
+Uso de propriedades específicas para garantir compatibilidade visual, como -webkit-text-fill-color para controlar o preenchimento de texto com background aplicado.
+
+📱 Responsividade
+O site foi testado e adaptado para três principais tamanhos de tela:
+
+Mobile: Layout otimizado para dispositivos móveis.
+
+Tablet: Ajustes de menu, listas e espaçamentos.
+
+Desktop: Melhor uso de espaço com paddings laterais e seções centralizadas.
+
+🚀 Próximos Passos
+Publicação do projeto na web através de serviços como GitHub Pages ou Netlify.
+
+Adição de novas interações e melhorias visuais, como efeitos em imagens e transições suaves.
+
+Customização livre utilizando a criatividade, aplicando novas pseudo-classes e efeitos CSS.
+
+🔗 Tecnologias Utilizadas
+HTML5
+
+CSS3
+
+Figma (para consulta do layout)
+
+💡 Desafio
+Explore ainda mais as possibilidades do CSS! Você pode adicionar efeitos como:
+
+Animações em botões;
+
+Alterar opacidade de imagens ao passar o mouse;
+
+Criação de transições suaves nos menus;
+
+E muito mais!
+
