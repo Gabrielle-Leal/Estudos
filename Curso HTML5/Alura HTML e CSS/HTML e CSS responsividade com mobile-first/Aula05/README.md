@@ -1,9 +1,45 @@
+# 🌐 Projeto Responsivo com HTML e CSS
 
-# Projeto de Criação de Layout Responsivo
+Este projeto consiste na criação de um site responsivo utilizando **HTML5** e **CSS3**, baseado em um layout desenvolvido no **Figma**. O objetivo foi replicar fielmente o design, garantindo que o site funcione bem em **mobile**, **tablet** e **desktop**, além de aplicar conceitos de interatividade e responsividade.
 
-Fizemos a estrutura de todo o nosso site, começando pelo HTML, seguindo a hierarquia dos elementos conforme o layout no Figma. Em seguida, aplicamos as folhas de estilo CSS, começando pela estilização básica, colocando cor de fundo, fontes, tamanhos e organização dos elementos através do Flexbox.
+---
 
-Após isso, passamos para o layout responsivo, criando media queries específicas para diferentes larguras de tela. Começamos ajustando o layout mobile, depois passamos para o tablet e por fim, fizemos ajustes no desktop.
+## ✨ Funcionalidades e Recursos
+
+- ✔️ Estruturação com HTML semântico.
+- 🎨 Estilização com CSS puro.
+- 📱 Layout 100% responsivo.
+- 🖱️ Efeitos de interação:
+  - Hover nos menus e listas.
+  - Troca de ícones no menu hambúrguer.
+  - Alteração de cores quando um item é selecionado.
+- 🔧 Utilização de:
+  - Pseudo-classes (`:hover`, `:checked`).
+  - Combinadores CSS (`~`, `>`).
+  - Unidades relativas (`vw`, `em`, `%`).
+- 🧠 Manipulação avançada:
+  - Borda lateral aplicada apenas no footer.
+  - Espaçamentos precisos para centralização dos elementos.
+
+---
+
+## 🎯 Estilo e Responsividade
+
+| Tela     | Ajustes Principais                                                                 |
+|-----------|-----------------------------------------------------------------------------------|
+| 📱 Mobile | Menu hambúrguer com ícone dinâmico, fundo azul degradê, otimizado para toque.     |
+| 💻 Desktop| Uso de `padding: 3em 30vw` para centralização e espaçamento lateral balanceado.    |
+| 🖥️ Tablet | Alteração da categoria selecionada, espaçamentos ajustados e efeitos em menus.     |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- ✅ **HTML5**
+- ✅ **CSS3**
+- ✅ **Figma** (como referência para o design)
+
+---
 
 No layout mobile, aplicamos o menu hamburguer, que ao ser clicado, exibe as opções do menu. Também aplicamos espaçamentos entre os elementos utilizando `padding` e `margin`, cuidando para que ficasse confortável para navegação em dispositivos pequenos.
 
