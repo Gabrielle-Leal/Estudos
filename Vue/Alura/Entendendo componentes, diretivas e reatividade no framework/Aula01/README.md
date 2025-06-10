@@ -1,43 +1,40 @@
-![Descricao da sua imagem](./thumbnail.png)
+# cookin-up
 
-# Indexa
+This template should help get you started developing with Vue 3 in Vite.
 
-Uma aplicação para manipulação de contatos de uma agenda.
+## Recommended IDE Setup
 
-## 🔨 Funcionalidades do projeto
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. Também é possível adicionar um novo contato.
+## Type Support for `.vue` Imports in TS
 
-Neste curso, será desenvolvida a tela de perfil, com detalhes do contato.
-Também serão implementadas as funcionalidades de edição e exclusão de contatos utilizando o HttpClient do angular.
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-## ✔️ Técnicas e tecnologias utilizadas
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-As técnicas e tecnologias utilizadas pra isso são:
+1. Disable the built-in TypeScript Extension
+    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-- `Comunicação HTTP com Angular`: utilização do HttpClient para realizar operações CRUD (Create, Read, Update, Delete), aproveitando os métodos HTTP GET, POST, PUT e DELETE para interagir com uma API;
-- `Observables`: exploração do uso de Observables para uma comunicação eficiente com a API, permitindo a manipulação de respostas assíncronas de forma eficaz;
-- `Obtenção de parâmetros de rota`: utilização do ActivatedRoute para obter parâmetros de rota e personalizar a exibição de detalhes de acordo com o contexto;
-- `Configuração do JSON Server`: configuração de uma API fake utilizando o JSON Server para simular o backend e testar as operações CRUD sem a necessidade de uma API real.
+## Customize configuration
 
-## 📁 Link do Figma
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=320-7053&mode=design&t=5Kgod8QnM11BiTCA-0).
+## Project Setup
 
-## 🛠️ Abrir e rodar o projeto
-
-Você vai precisar do NodeJS, versão 18 ou maior.
-
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
-
-```bash
+```sh
 npm install
 ```
 
-Depois, para executar o projeto em modo desenvolvimento:
+### Compile and Hot-Reload for Development
 
-```bash
-ng serve
+```sh
+npm run dev
 ```
 
-Depois, acesse [http://localhost:4200/](url) no seu navegador.
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
